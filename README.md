@@ -5,7 +5,10 @@
 RecruitAI Pro is a comprehensive AI recruitment assistant that analyzes resume–JD fit, generates personalized interview questions, and produces visual, decision‑ready reports. It is built with a Vue 3 frontend, a FastAPI backend, ECharts visualizations, and integrates Zhipu AI for text analysis. The app supports Chinese/English UI and is production‑ready with Docker and Nginx.
 
 ## 🎥 Demo Videos
-`docs/videos/demo.mp4`
+
+- Demo 1 (End‑to‑end flow): [Watch video](docs/videos/demo.mp4)
+
+Tip: GitHub README does not inline‑play mp4. Click the link to open in browser. For inline playback in your site, place the file under `frontend/public/videos/` and reference `/videos/demo.mp4` in your page.
 
 ## ⚡ Ultra‑fast Start (4 Steps)
 
