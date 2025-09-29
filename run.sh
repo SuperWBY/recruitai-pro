@@ -20,7 +20,7 @@ fi
 # 检查环境变量文件
 if [ ! -f ".env" ]; then
     echo "⚠️  环境变量文件不存在，正在创建..."
-    cp env_example.txt .env
+    cp env.txt .env
     echo "📝 请编辑.env文件，设置智谱清言API密钥"
     echo "   ZHIPU_API_KEY=your_zhipu_api_key_here"
     read -p "按回车键继续..."

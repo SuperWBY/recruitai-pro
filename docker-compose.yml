@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # 后端服务
   backend:
@@ -24,6 +22,22 @@ services:
       retries: 3
     networks:
       - recruitment-network
+    develop:
+      watch:
+        # 同步源代码变更到容器内，触发应用自动重载（若进程支持）
+        - path: ./backend
+          action: sync
+          target: /app
+          ignore:
+            - "**/__pycache__/**"
+            - "**/*.pyc"
+            - "**/.venv/**"
+            - "**/.mypy_cache/**"
+            - "**/.pytest_cache/**"
+            - "**/uploads/**"
+        # 依赖文件变化时重建镜像
+        - path: ./backend/requirements.txt
+          action: rebuild
 
   # 前端服务
   frontend:
@@ -38,6 +52,19 @@ services:
     restart: unless-stopped
     networks:
       - recruitment-network
+    develop:
+      watch:
+        # 源码或配置变化时重建前端镜像（打包产物由nginx直接提供）
+        - path: ./frontend/src
+          action: rebuild
+        - path: ./frontend/public
+          action: rebuild
+        - path: ./frontend/package.json
+          action: rebuild
+        - path: ./frontend/package-lock.json
+          action: rebuild
+        - path: ./frontend/vite.config.*
+          action: rebuild
 
   # Nginx反向代理（可选）
   nginx:

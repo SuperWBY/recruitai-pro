@@ -12,7 +12,7 @@ cd recruitment-assistant
 
 2. **配置环境变量**
 ```bash
-cp env_example.txt .env
+cp env.txt .env
 # 编辑.env文件，设置智谱清言API密钥
 ```
 
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 4. **配置环境变量**
 ```bash
-cp env_example.txt .env
+cp env.txt .env
 # 编辑.env文件，设置智谱清言API密钥
 ```
 

@@ -69,7 +69,7 @@
                     type="textarea"
                     :rows="8"
                     placeholder="请输入职位描述，包括：&#10;1. 岗位职责&#10;2. 任职要求&#10;3. 技能要求&#10;4. 工作经验要求&#10;5. 教育背景要求等..."
-                    maxlength="2000"
+                    maxlength="5000"
                     show-word-limit
                   />
                 </div>
@@ -359,15 +359,15 @@ const startAnalysis = async () => {
 // 反馈相关方法
 const openFeedbackSurvey = () => {
   // 这里可以替换为实际的问卷调查链接
-  const surveyUrl = 'https://forms.office.com/r/your-survey-link'
+  const surveyUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfxKzQp7roJpC8827vakv9PiAweonADNBGxmObe_u0ly36Ijg/viewform?usp=header'
   window.open(surveyUrl, '_blank')
   ElMessage.success('感谢您的参与！')
 }
 
-const openFeedbackAndData = () => {
-  // 这里可以替换为实际的功能建议和数据贡献链接
-  const feedbackUrl = 'mailto:feedback@recruitment-assistant.com?subject=功能建议与数据贡献'
-  window.open(feedbackUrl, '_blank')
+const openFeedbackAndData = async () => {
+  await ElMessageBox.alert('邮箱: wby106006@gmail.com', '联系邮箱', {
+    confirmButtonText: '好的'
+  })
   ElMessage.success('感谢您的建议！')
 }
 </script>

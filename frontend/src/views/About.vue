@@ -30,7 +30,7 @@
         <div class="hero-section">
           <div class="hero-content">
             <h1 class="hero-title">
-              <Trophy class="w-6 h-6" />
+              <Cpu class="w-6 h-6" />
               AI招聘筛选助手
             </h1>
             <p class="hero-subtitle">
@@ -163,7 +163,7 @@
                   <h4>AI技术</h4>
                   <ul>
                     <li>智谱清言API</li>
-                    <li>GLM-4模型</li>
+                    <li>GLM-4.5模型</li>
                     <li>自然语言处理</li>
                     <li>文档解析</li>
                     <li>智能分析</li>
@@ -271,15 +271,7 @@
             <div class="contact-info">
               <div class="contact-item">
                 <MessageCircle class="w-5 h-5" />
-                <span>技术支持：support@example.com</span>
-              </div>
-              <div class="contact-item">
-                <Phone class="w-5 h-5" />
-                <span>客服热线：400-123-4567</span>
-              </div>
-              <div class="contact-item">
-                <MapPin class="w-5 h-5" />
-                <span>公司地址：北京市朝阳区xxx大厦</span>
+                <span>联系方式:wby106006@gmail.com</span>
               </div>
             </div>
             <div class="contact-actions">
@@ -301,7 +293,7 @@
     <el-footer class="footer">
       <div class="footer-content">
         <div class="footer-info">
-          <p>&copy; 2024 AI招聘筛选助手. 基于智谱清言AI技术构建.</p>
+          <p>&copy; 2025 AI招聘筛选助手. 基于智谱清言AI技术构建.</p>
           <p>让招聘更智能，让人才更精准</p>
         </div>
         <div class="footer-links">
