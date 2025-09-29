@@ -8,13 +8,13 @@ RecruitAI Pro is a comprehensive AI recruitment assistant that analyzes resume�
 
 ## ✨ Highlights
 
-- **Smart Resume Analysis**: Parse PDF/DOCX resumes and evaluate against JD
-- **Match Scoring**: Quantified candidate–JD match with robust fallback logic
-- **Personalized Questions**: Tailored interview prompts from the analysis
-- **Rich Visuals**: Skill radar, comparisons, distributions, and more with ECharts
-- **Resilient UX**: Default content and error handling even for low/invalid JSON
-- **Responsive UI**: Modern layouts, dark mode, and optimized print styles
-- **Feedback Loop**: Built‑in survey entry and one‑click contact
+- Smart Resume Analysis**: Parse PDF/DOCX resumes and evaluate against JD
+- Match Scoring**: Quantified candidate–JD match with robust fallback logic
+- Personalized Questions**: Tailored interview prompts from the analysis
+- Rich Visuals**: Skill radar, comparisons, distributions, and more with ECharts
+- Resilient UX**: Default content and error handling even for low/invalid JSON
+- Responsive UI**: Modern layouts, dark mode, and optimized print styles
+- Feedback Loop**: Built‑in survey entry and one‑click contact
 
 ## 🛠️ Tech Stack
 
