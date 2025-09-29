@@ -19,11 +19,11 @@ RecruitAI Pro is a comprehensive AI recruitment assistant that analyzes resume�
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **Vue 3 + Vite - Progressive JavaScript framework
-- **Element Plus (components) - Vue 3 component library
-- **Lucide Vue (icons) - Beautiful icons
-- **ECharts (visualizations) - Data visualization
-- **Pinia (state) - State management
+- Vue 3 + Vite - Progressive JavaScript framework
+- Element Plus (components) - Vue 3 component library
+- Lucide Vue (icons) - Beautiful icons
+- ECharts (visualizations) - Data visualization
+- Pinia (state) - State management
 
 ### Backend
 - Python 3.11 + FastAPI
