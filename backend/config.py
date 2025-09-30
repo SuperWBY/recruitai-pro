@@ -12,7 +12,9 @@ ZHIPU_API_URL = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
 
 # 数据库配置
 import os
-DATABASE_URL = f"sqlite:///{os.path.abspath('recruitment_assistant.db')}"
+db_dir = os.getenv("DB_DIR", "db")
+os.makedirs(db_dir, exist_ok=True)
+DATABASE_URL = f"sqlite:///{os.path.join(db_dir, 'recruitment_assistant.db')}"
 
 # 文件上传配置
 UPLOAD_DIR = "uploads"

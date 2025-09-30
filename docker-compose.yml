@@ -13,7 +13,7 @@ services:
       - DEBUG=False
     volumes:
       - ./backend/uploads:/app/uploads
-      - ./backend/recruitment_assistant.db:/app/recruitment_assistant.db
+      - db-data:/app/db
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
@@ -90,3 +90,4 @@ networks:
 volumes:
   uploads:
   database:
+  db-data:
